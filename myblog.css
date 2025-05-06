@@ -1,0 +1,328 @@
+#search-button {
+    border-radius: 20px; /* Makes the button corners curved */
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; /* Increased the border radius for a more rounded appearance */
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+#search-button:hover {
+    background-color: #3840dac6;
+    box-shadow: 2px 4px 8px rgba(20, 92, 155, 0.59); /* Adds shadow when cursor hovers over the button */
+}
+
+#search-input {
+    border-radius: 25px; /* Increased the border radius for a more rounded appearance */
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Added transition for smooth animation */
+    font-size: larger;
+    margin-top: 26px;/* Makes the input field take the full width of its container */
+    box-shadow: 0px  4px 6px rgba(32, 25, 240, 0.703); /* Added shadow to the search bar */
+}
+
+#search-input:focus {
+    border-color: #2020b2;
+    transform: scale(1.05); /* Slightly enlarges the search bar on focus */
+}
+
+#search-input:hover {
+    box-shadow: 0 8px 12px rgba(227, 61, 208, 0.708); /* Shadow glows on hover */
+    transform: scale(1.03); /* Slightly enlarges the search bar on hover */
+    background-color: #f0f8ff; /* Changes background color when glowing */
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+header.dark-mode {
+    background-color: #1e1e1e;
+}
+
+#search-input.dark-mode {
+    background-color: #333;
+    color: #fff;
+    border-color: #555;
+}
+
+#search-button.dark-mode {
+    background-color: #444;
+    color: #fff;
+}
+
+/* Dark Mode Styles for Trending Section */
+#trending.dark-mode p {
+    color: white; /* Changes the color of <p> tags to white in dark mode */
+}
+
+#trending.dark-mode p {
+    color: black; /* Changes the color of <p> tags to black in dark mode */
+}
+
+/* Dark Mode Styles for Latest Posts Section */
+#latest-posts.dark-mode p {
+    color: black; /* Changes the color of <p> tags to black in dark mode */
+}
+
+/* Dark Toggle Button Styles */
+.toggle-btn {
+    background-color: #09325d;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.toggle-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.toggle-btn.dark-mode {
+    background-color: #444;
+    color: #fff;
+}
+
+/* Typing Animation Styles */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid white;
+    width: 0;
+    animation: typing 4s steps(30, end) infinite, blink 0.5s step-end infinite;
+}
+
+/* Image Styling */
+img {
+    max-width: 100%; /* Ensures images are responsive */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 8px; /* Adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adds hover effects */
+}
+
+img:hover {
+    transform: scale(1.05); /* Slightly enlarges the image on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhances shadow on hover */
+}
+
+/* Comment Section Styles */
+.comment-section {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.comment-section h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.comment-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.comment-section input,
+.comment-section textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.comment-section input:focus,
+.comment-section textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.comment-section button {
+    align-self: flex-start;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.comment-section button:hover {
+    background-color: #0056b3;
+}
+
+/* Add smooth transition to swipe images */
+.slider-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Smooth transition for swipe */
+}
+
+/* Adjust Image Size in Slider */
+.slider-container img {
+    max-width: 350px; /* Increased the width of the images */
+    max-height: 350px; /* Increased the height of the images */
+    margin-right: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+}
+
+.slider-container img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced hover shadow */
+}
+
+/* Slide Image Animation */
+.image-slider {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 300px; /* Adjust height as needed */
+}
+
+.slider-container {
+    display: flex;
+    animation: slide 10s infinite;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-70%); }
+    50% { transform: translateX(-150%); }
+    75% { transform: translateX(-00%); }
+    100% { transform: translateX(50%); }
+}
+
+.slider-container img {
+    width: 100%;
+    flex-shrink: 0;
+    transition: transform 0.4s ease, box-shadow 0.3s ease;
+}
+
+.slider-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Authentication Forms Styles */
+.auth-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 0;
+}
+
+.auth-container div {
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 45%;
+}
+
+.auth-container h3 {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.auth-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.auth-container input {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.auth-container button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.auth-container button:hover {
+    background-color: #0056b3;
+}
+
+/* Pagination Styles */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+.pagination button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.pagination button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.pagination button:disabled {
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+}
+
+#page-info {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Removed text decoration from h3 elements */
+h3 {
+    text-decoration: none;
+}
+
+/* Ensure text decoration is removed from h3 elements */
+h3 {
+    text-decoration: none !important;
+}
