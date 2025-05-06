@@ -1,0 +1,157 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header.navbar {
+    background-color: #0b83c9;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+header.navbar .nav-list {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+header.navbar .nav-link {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header.navbar .nav-link:hover {
+    color: #ffdd57;
+}
+
+/* Button Styles */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Image Styles */
+img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Adjusting the image size for better visibility */
+.post-image img {
+    max-width: 100%;
+    height: 2px;
+    display: flex;
+    margin: 0 auto;
+    font-size: small;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(204, 17, 17, 0.1);
+}
+
+/* Decreasing the height of the image for better layout */
+.post-image img {
+    max-width: 100%;
+    height: 0px; /* Adjusted height */
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(204, 17, 17, 0.1);
+   
+}
+
+/* Footer Styles */
+.post-title {
+    font-size: 4rem;
+    margin: 1.5rem 0;
+    color: #333;
+}
+
+/* Styling for interactive tooltips */
+.tooltip {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    z-index: 1000;
+    display: none;
+    pointer-events: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for h1 elements */
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for h2 elements */
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #0056b3; /* Matching color with h3 */
+    margin-bottom: 1rem;
+    text-align: left;
+    border-left: 4px solid #007bff;
+    padding-left: 0.5rem;
+}
+
+/* Adding space between each content block */
+.post-details .container > * {
+    margin-bottom: 1.5rem;
+}
+.post-image{
+
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(204, 17, 17, 0.1);
+    
+    height: auto; /* Adjusted height */
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(204, 17, 17, 0.1);
+    max-width: 70%;
+    height: auto; /* Adjusted height */
+   
+
+
+}
